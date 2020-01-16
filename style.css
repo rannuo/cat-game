@@ -5,7 +5,7 @@ body {
     background: springgreen;
 }
 .cat {
-    position: relative;
+    position: absolute;
     width: 20px;
     height: 20px;
     background: center center/contain url(./imgs/cat.png) no-repeat;
@@ -22,7 +22,8 @@ body {
     background: white;
 }
 
-.food { 
+.food {
+    position: absolute;
     width: 5px;
     height: 5px;
     border-radius: 100%;
