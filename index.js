@@ -29,12 +29,12 @@ class Cat {
     moveTo(x, y, cb) {
         var distance = calcDistance(this.x ,this.y, x, y);
 
+        const time = distance * 5;
+
         this.el.style.transitionDuration = `${distance * 5}ms`;
 
-        this.el.ontransitionend = () => {
-            cb();
-        };
         setPos(this.el, x, y);
+        setTimeout(cb, time);
     }
 
     showEating() {
