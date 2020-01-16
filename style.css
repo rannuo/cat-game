@@ -1,0 +1,31 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: springgreen;
+}
+.cat {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: center center/contain url(./imgs/cat.png) no-repeat;
+    transition: all 1s;
+}
+
+.eating:after {
+    content: '真好吃!!';
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    left: 100%;
+    top: -100%;
+    background: white;
+}
+
+.food { 
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background: orange;
+    border: 1px solid black;
+}
